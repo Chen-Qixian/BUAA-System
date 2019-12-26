@@ -79,11 +79,71 @@ $(function () {
             $(this).find('i').attr('class', 'fa fa-long-arrow-left');
         }
     });
-    $('#sidebar a').on('click', function() {
-        setTimeout(() => {
-            let scrolltop = Math.max( $("html").scrollTop(), $("body").scrollTop() );
-            console.log(scrolltop);
-            $(window).scrollTop(scrolltop - 80);
-        } , 0)
+    const OFFSETTOP = -80;
+    $('#dashboard-link').click(function() {
+        $('html, body').animate(
+        {
+            scrollTop: $('#dashboard').offset().top + OFFSETTOP
+        },
+        {
+            duration: 500,
+            easing: "swing"
+        })
+        return false;
+    })
+    $('#configuration-link').click(function() {
+        $('html, body').animate(
+        {
+            scrollTop: $('#configuration').offset().top + OFFSETTOP
+        },
+        {
+            duration: 500,
+            easing: "swing"
+        })
+        return false;
+    })
+    $('#fileUpload-link').click(function() {
+        $('html, body').animate(
+        {
+            scrollTop: $('#fileUpload').offset().top + OFFSETTOP
+        },
+        {
+            duration: 500,
+            easing: "swing"
+        })
+        return false;
+    })
+    $('#statistics-link').click(function() {
+        $('html, body').animate(
+        {
+            scrollTop: $('#statistics').offset().top + OFFSETTOP
+        },
+        {
+            duration: 500,
+            easing: "swing"
+        })
+        return false;
+    })
+    $('#dataVisual-link').click(function() {
+        $('html, body').animate(
+        {
+            scrollTop: $('#datavisualization').offset().top + OFFSETTOP
+        },
+        {
+            duration: 500,
+            easing: "swing"
+        })
+        return false;
+    })
+    $('#runtime-link').click(function() {
+        $('html, body').animate(
+        {
+            scrollTop: $('#runtime').offset().top + OFFSETTOP
+        },
+        {
+            duration: 500,
+            easing: "swing"
+        })
+        return false;
     })
 });
