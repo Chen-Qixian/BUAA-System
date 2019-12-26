@@ -1,1 +1,21 @@
-/* your styles go here */
+/* private css */
+nav#sidebar {
+    position: fixed;
+    margin-top: 80px;
+    height: 100%;
+}
+
+header.header {
+    position: fixed;
+    width: 100%;
+    z-index: 199999;
+}
+
+.page-content {
+    margin-top: 80px;
+    margin-left: 280px;
+}
+.page-content.active {
+    margin-top: 80px;
+    margin-left: 80px;
+}
