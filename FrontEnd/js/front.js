@@ -81,6 +81,8 @@ $(function () {
     });
     const OFFSETTOP = -80;
     $('#dashboard-link').click(function() {
+        $(this).parent().siblings().removeClass('active')
+        $(this).parent().addClass('active')
         $('html, body').animate(
         {
             scrollTop: $('#dashboard').offset().top + OFFSETTOP
@@ -92,6 +94,8 @@ $(function () {
         return false;
     })
     $('#configuration-link').click(function() {
+        $(this).parent().siblings().removeClass('active')
+        $(this).parent().addClass('active')
         $('html, body').animate(
         {
             scrollTop: $('#configuration').offset().top + OFFSETTOP
@@ -103,6 +107,8 @@ $(function () {
         return false;
     })
     $('#fileUpload-link').click(function() {
+        $(this).parent().siblings().removeClass('active')
+        $(this).parent().addClass('active')
         $('html, body').animate(
         {
             scrollTop: $('#fileUpload').offset().top + OFFSETTOP
@@ -114,6 +120,8 @@ $(function () {
         return false;
     })
     $('#statistics-link').click(function() {
+        $(this).parent().siblings().removeClass('active')
+        $(this).parent().addClass('active')
         $('html, body').animate(
         {
             scrollTop: $('#statistics').offset().top + OFFSETTOP
@@ -125,6 +133,8 @@ $(function () {
         return false;
     })
     $('#dataVisual-link').click(function() {
+        $(this).parent().siblings().removeClass('active')
+        $(this).parent().addClass('active')
         $('html, body').animate(
         {
             scrollTop: $('#datavisualization').offset().top + OFFSETTOP
@@ -136,6 +146,8 @@ $(function () {
         return false;
     })
     $('#runtime-link').click(function() {
+        $(this).parent().siblings().removeClass('active')
+        $(this).parent().addClass('active')
         $('html, body').animate(
         {
             scrollTop: $('#runtime').offset().top + OFFSETTOP
