@@ -222,7 +222,7 @@ $(document).ready(function () {
             labels: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "L", "M", "N", "O", "P", "Q", "R", "S", "T"],
             datasets: [
                 {
-                    label: "Team Drills",
+                    label: "Upload Succeed",
                     fill: true,
                     lineTension: 0.3,
                     backgroundColor: "transparent",
@@ -245,7 +245,7 @@ $(document).ready(function () {
                     spanGaps: false
                 },
                 {
-                    label: "Team Drills",
+                    label: "Upload Failed",
                     fill: true,
                     lineTension: 0.3,
                     backgroundColor: "transparent",

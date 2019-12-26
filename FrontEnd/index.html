@@ -184,13 +184,13 @@
     <!--  侧边栏导航 end -->
     <!-- 页面内容 -->
     <div class="page-content">
-      <!-- 页面模块标题 -->
+      <!-- dashboard 内容 -->
       <div class="page-header" id="dashboard">
         <div class="container-fluid">
           <h2 class="h5 no-margin-bottom">Dashboard</h2>
         </div>
       </div>
-      <!-- 配置数据概览 -->
+      <!-- 四个并排的数据框 -->
       <section class="no-padding-top no-padding-bottom">
         <div class="container-fluid">
           <div class="row">
@@ -249,18 +249,22 @@
           </div>
         </div>
       </section>
+      <!-- 两个并排的数据表格 -->
       <section class="no-padding-bottom">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-4">
+              <!-- 柱状图上 -->
               <div class="bar-chart block no-margin-bottom">
                 <canvas id="barChartExample1"></canvas>
               </div>
+              <!-- 柱状图下 -->
               <div class="bar-chart block">
                 <canvas id="barChartExample2"></canvas>
               </div>
             </div>
             <div class="col-lg-8">
+              <!-- 折线图 -->
               <div class="line-cahrt block">
                 <canvas id="lineCahrt"></canvas>
               </div>
@@ -268,6 +272,8 @@
           </div>
         </div>
       </section>
+      <!-- dashboard 内容 end -->
+      <!-- FileUpload 内容 -->
       <div class="page-header" id="fileUpload">
         <div class="container-fluid">
           <h2 class="h5 no-margin-bottom">File Upload</h2>
@@ -277,13 +283,14 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6">
+              <!-- 左上方数据框 -->
               <div class="stats-2-block block d-flex">
                 <div class="stats-2 d-flex">
                   <div class="stats-2-arrow low"><i class="fa fa-caret-down"></i></div>
-                  <div class="stats-2-content"><strong class="d-block">5.657</strong><span class="d-block">Standard
-                      Scans</span>
+                  <div class="stats-2-content">
+                    <strong class="d-block">5.657</strong><span class="d-block">File Transfer Rate</span>
                     <div class="progress progress-template progress-small">
-                      <div role="progressbar" style="width: 60%;" aria-valuenow="30" aria-valuemin="0"
+                      <div role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
                         aria-valuemax="100" class="progress-bar progress-bar-template progress-bar-small dashbg-2">
                       </div>
                     </div>
@@ -291,8 +298,8 @@
                 </div>
                 <div class="stats-2 d-flex">
                   <div class="stats-2-arrow height"><i class="fa fa-caret-up"></i></div>
-                  <div class="stats-2-content"><strong class="d-block">3.1459</strong><span class="d-block">Team
-                      Scans</span>
+                  <div class="stats-2-content">
+                    <strong class="d-block">3.1459</strong><span class="d-block">File Processing Speed</span>
                     <div class="progress progress-template progress-small">
                       <div role="progressbar" style="width: 35%;" aria-valuenow="30" aria-valuemin="0"
                         aria-valuemax="100" class="progress-bar progress-bar-template progress-bar-small dashbg-3">
@@ -301,6 +308,7 @@
                   </div>
                 </div>
               </div>
+              <!-- 左下方数据框 -->
               <div class="stats-3-block block d-flex">
                 <div class="stats-3"><strong class="d-block">745</strong><span class="d-block">Total requests</span>
                   <div class="progress progress-template progress-small">
@@ -321,6 +329,7 @@
               </div>
             </div>
             <div class="col-lg-6">
+              <!-- 右侧折线图 -->
               <div class="drills-chart block">
                 <canvas id="lineChart1"></canvas>
               </div>
@@ -328,6 +337,8 @@
           </div>
         </div>
       </section>
+      <!-- FileUpload 内容 end -->
+      <!-- Configuration 内容 -->
       <div class="page-header" id="configuration">
         <div class="container-fluid">
           <h2 class="h5 no-margin-bottom">Configuration</h2>
@@ -335,6 +346,7 @@
       </div>
       <section class="no-padding-bottom">
         <div class="container-fluid">
+          <!-- 上方三个大型标志框 -->
           <div class="row">
             <div class="col-lg-4">
               <div class="user-block block text-center">
@@ -382,6 +394,7 @@
               </div>
             </div>
           </div>
+          <!-- 下方列举4-6th的标志框 -->
           <div class="public-user-block block">
             <div class="row d-flex align-items-center">
               <div class="col-lg-4 d-flex align-items-center">
@@ -444,6 +457,8 @@
           </div>
         </div>
       </section>
+      <!-- Configuration 内容 end -->
+      <!-- Statistics 内容 -->
       <div class="page-header" id="statistics">
         <div class="container-fluid">
           <h2 class="h5 no-margin-bottom">Statistics</h2>
@@ -506,6 +521,8 @@
           </div>
         </div>
       </section>
+      <!-- Statistics 内容 end -->
+      <!-- Data Visualization 内容 -->
       <div class="page-header" id="datavisualization">
         <div class="container-fluid">
           <h2 class="h5 no-margin-bottom">Data Visualization</h2>
@@ -584,6 +601,8 @@
           </div>
         </div>
       </section>
+      <!-- Data Visualization 内容 end -->
+      <!-- Runtime 内容 -->
       <div class="page-header" id="runtime">
         <div class="container-fluid">
           <h2 class="h5 no-margin-bottom">Runtime Logs</h2>
@@ -625,6 +644,7 @@
           </div>
         </div>
       </section>
+      <!-- Runtime 内容 end -->
 
       <footer class="footer">
         <div class="footer__block block no-margin-bottom">

@@ -19,3 +19,7 @@ header.header {
     margin-top: 80px;
     margin-left: 80px;
 }
+
+nav#sidebar ul li:hover {
+    cursor: pointer;
+}
