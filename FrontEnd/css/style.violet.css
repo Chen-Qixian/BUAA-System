@@ -1454,10 +1454,6 @@ nav#sidebar.shrinked a[aria-expanded="true"]::after {
   background: #282b2f;
 }
 
-.checklist-block input:checked + label {
-  text-decoration: line-through;
-}
-
 /* Messages Media Query */
 .messages-block a.message {
   color: #8a8d93;
