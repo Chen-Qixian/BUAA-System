@@ -178,7 +178,7 @@
         <li><a id="configuration-link"> <i class="icon-settings"></i>Configuration </a></li>
         <li><a id="statistics-link"> <i class="icon-grid"></i>Statistics </a></li>
         <li><a id="dataVisual-link"> <i class="icon-chart"></i>Data Visualization </a></li>
-        <li><a id="runtime-link"> <i class="icon-padnote"></i>Runtime Logs </a></li>
+        <li><a id="runtime-link"> <i class="icon-padnote"></i>Recommendations </a></li>
       </ul>
     </nav>
     <!--  侧边栏导航 end -->
@@ -255,31 +255,36 @@
           <div class="row">
             <div class="col-lg-4">
               <div class="stats-with-chart-2 block">
-                <div class="title"><strong class="d-block">Credit Sales</strong><span class="d-block">Lorem ipsum dolor
-                    sit</span></div>
+                <div class="title">
+                  <strong class="d-block">CG Cost</strong>
+                  <span class="d-block">Application Communication Graph </span>
+                </div>
                 <div class="piechart chart">
                   <canvas id="pieChartHome1"></canvas>
-                  <div class="text"><strong class="d-block">$2.145</strong><span class="d-block">Sales</span></div>
+                  <div class="text"><strong class="d-block">2,145</strong><span class="d-block">Bytes</span></div>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="stats-with-chart-2 block">
-                <div class="title"><strong class="d-block">Channel Sales</strong><span class="d-block">Lorem ipsum dolor
-                    sit</span></div>
+                <div class="title">
+                  <strong class="d-block">TG Cost</strong>
+                  <span class="d-block">Cost for System Topology Gragh </span>
+                </div>
                 <div class="piechart chart">
                   <canvas id="pieChartHome2"></canvas>
-                  <div class="text"><strong class="d-block">$7.784</strong><span class="d-block">Sales</span></div>
+                  <div class="text"><strong class="d-block">7,784</strong><span class="d-block">Bytes</span></div>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="stats-with-chart-2 block">
-                <div class="title"><strong class="d-block">Direct Sales</strong><span class="d-block">Lorem ipsum dolor
-                    sit</span></div>
+                <div class="title">
+                  <strong class="d-block">Mapping Cost</strong>
+                  <span class="d-block">Cost difference for mapping </span></div>
                 <div class="piechart chart">
                   <canvas id="pieChartHome3"></canvas>
-                  <div class="text"><strong class="d-block">$4.957</strong><span class="d-block">Sales</span></div>
+                  <div class="text"><strong class="d-block">4,957</strong><span class="d-block">Bytes</span></div>
                 </div>
               </div>
             </div>
@@ -300,75 +305,98 @@
           <h2 class="h5 no-margin-bottom">Configuration</h2>
         </div>
       </div>
-      <!-- todolist的文字部分 -->
+      <!-- 参数选择列表 -->
       <section class="no-padding-bottom">
         <div class="container-fluid">
           <div class="row">
+            <!-- 参数配置勾选项 -->
             <div class="col-lg-6">
               <div class="checklist-block block">
-                <div class="title"><strong>To Do List</strong></div>
+                <div class="title"><strong>Paragrams Configuration</strong></div>
                 <div class="checklist">
                   <div class="item d-flex align-items-center">
                     <input type="checkbox" id="input-1" name="input-1" class="checkbox-template">
-                    <label for="input-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+                    <label for="input-1">Paragram 1</label>
                   </div>
                   <div class="item d-flex align-items-center">
                     <input type="checkbox" id="input-2" name="input-2" checked class="checkbox-template">
-                    <label for="input-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+                    <label for="input-2">Paragram 2</label>
                   </div>
                   <div class="item d-flex align-items-center">
                     <input type="checkbox" id="input-3" name="input-3" class="checkbox-template">
-                    <label for="input-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+                    <label for="input-3">Paragram 3</label>
                   </div>
                   <div class="item d-flex align-items-center">
                     <input type="checkbox" id="input-4" name="input-4" class="checkbox-template">
-                    <label for="input-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+                    <label for="input-4">Paragram 4</label>
                   </div>
                   <div class="item d-flex align-items-center">
                     <input type="checkbox" id="input-5" name="input-5" class="checkbox-template">
-                    <label for="input-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+                    <label for="input-5">Paragram 5</label>
                   </div>
                   <div class="item d-flex align-items-center">
                     <input type="checkbox" id="input-6" name="input-6" class="checkbox-template">
-                    <label for="input-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+                    <label for="input-6">Paragram 6</label>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- 算法可用状态 -->
             <div class="col-lg-6">
               <div class="messages-block block">
-                <div class="title"><strong>New Messages</strong></div>
-                <div class="messages"><a href="#" class="message d-flex align-items-center">
+                <div class="title"><strong>Algorithms Status</strong></div>
+                <div class="messages">
+                  <a class="message d-flex align-items-center">
                     <div class="profile"><img src="img/avatar-3.jpg" alt="..." class="img-fluid">
                       <div class="status online"></div>
                     </div>
-                    <div class="content"> <strong class="d-block">Nadia Halsey</strong><span class="d-block">lorem ipsum
-                        dolor sit amit</span><small class="date d-block">9:30am</small></div>
-                  </a><a href="#" class="message d-flex align-items-center">
-                    <div class="profile"><img src="img/avatar-2.jpg" alt="..." class="img-fluid">
-                      <div class="status away"></div>
+                    <div class="content"> 
+                      <strong class="d-block">QTMS/LPMS</strong>
+                      <span class="d-block">Available</span>
+                      <small class="date d-block">ready</small>
                     </div>
-                    <div class="content"> <strong class="d-block">Peter Ramsy</strong><span class="d-block">lorem ipsum
-                        dolor sit amit</span><small class="date d-block">7:40am</small></div>
-                  </a><a href="#" class="message d-flex align-items-center">
-                    <div class="profile"><img src="img/avatar-1.jpg" alt="..." class="img-fluid">
+                  </a>
+                  <a class="message d-flex align-items-center">
+                    <div class="profile"><img src="img/avatar-2.jpg" alt="..." class="img-fluid">
                       <div class="status busy"></div>
                     </div>
-                    <div class="content"> <strong class="d-block">Sam Kaheil</strong><span class="d-block">lorem ipsum
-                        dolor sit amit</span><small class="date d-block">6:55am</small></div>
-                  </a><a href="#" class="message d-flex align-items-center">
-                    <div class="profile"><img src="img/avatar-5.jpg" alt="..." class="img-fluid">
-                      <div class="status offline"></div>
+                    <div class="content"> 
+                      <strong class="d-block">APHiD</strong>
+                      <span class="d-block">Unavailable</span>
+                      <small class="date d-block">file format error</small>
                     </div>
-                    <div class="content"> <strong class="d-block">Sara Wood</strong><span class="d-block">lorem ipsum
-                        dolor sit amit</span><small class="date d-block">10:30pm</small></div>
-                  </a><a href="#" class="message d-flex align-items-center">
+                  </a>
+                  <a class="message d-flex align-items-center">
                     <div class="profile"><img src="img/avatar-1.jpg" alt="..." class="img-fluid">
                       <div class="status online"></div>
                     </div>
-                    <div class="content"> <strong class="d-block">Nader Magdy</strong><span class="d-block">lorem ipsum
-                        dolor sit amit</span><small class="date d-block">9:47pm</small></div>
-                  </a></div>
+                    <div class="content"> 
+                      <strong class="d-block">TopoMapping</strong>
+                      <span class="d-block">Available</span>
+                      <small class="date d-block">ready</small>
+                    </div>
+                  </a>
+                  <a class="message d-flex align-items-center">
+                    <div class="profile"><img src="img/avatar-5.jpg" alt="..." class="img-fluid">
+                      <div class="status online"></div>
+                    </div>
+                    <div class="content"> 
+                      <strong class="d-block">TreeMatch</strong>
+                      <span class="d-block">Available</span>
+                      <small class="date d-block">ready</small>
+                    </div>
+                  </a>
+                  <a class="message d-flex align-items-center">
+                    <div class="profile"><img src="img/avatar-1.jpg" alt="..." class="img-fluid">
+                      <div class="status busy"></div>
+                    </div>
+                    <div class="content"> 
+                      <strong class="d-block">MPIPP</strong>
+                      <span class="d-block">Unavailable</span>
+                      <small class="date d-block">Params out of range</small>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -533,7 +561,7 @@
       <!-- Runtime 内容 -->
       <div class="page-header" id="runtime">
         <div class="container-fluid">
-          <h2 class="h5 no-margin-bottom">Runtime Logs</h2>
+          <h2 class="h5 no-margin-bottom">Recommendations</h2>
         </div>
       </div>
       <!-- 性能推荐排行 -->
@@ -542,12 +570,12 @@
           <div class="row">
             <div class="col-lg-4">
               <div class="user-block block text-center">
-                <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid">
+                <div class="avatar"><img src="img/QTMS.png" alt="..." class="img-fluid first-algo">
                   <div class="order dashbg-2">1st</div>
                 </div><a href="#" class="user-title">
-                  <h3 class="h5">Richard Nevoreski</h3><span>@richardnevo</span>
+                  <h3 class="h5">QTMS</h3><span>@Yan Baicheng</span>
                 </a>
-                <div class="contributions">950 Contributions</div>
+                <div class="contributions">950 Points</div>
                 <div class="details d-flex">
                   <div class="item"><i class="icon-info"></i><strong>150</strong></div>
                   <div class="item"><i class="fa fa-gg"></i><strong>340</strong></div>
@@ -557,12 +585,12 @@
             </div>
             <div class="col-lg-4">
               <div class="user-block block text-center">
-                <div class="avatar"><img src="img/avatar-4.jpg" alt="..." class="img-fluid">
+                <div class="avatar"><img src="img/LPMS.png" alt="..." class="img-fluid second-algo">
                   <div class="order dashbg-1">2nd</div>
                 </div><a href="#" class="user-title">
-                  <h3 class="h5">Samuel Watson</h3><span>@samwatson</span>
+                  <h3 class="h5">LPMS</h3><span>@Yan Baicheng</span>
                 </a>
-                <div class="contributions">772 Contributions</div>
+                <div class="contributions">772 Points</div>
                 <div class="details d-flex">
                   <div class="item"><i class="icon-info"></i><strong>80</strong></div>
                   <div class="item"><i class="fa fa-gg"></i><strong>420</strong></div>
@@ -572,12 +600,12 @@
             </div>
             <div class="col-lg-4">
               <div class="user-block block text-center">
-                <div class="avatar"><img src="img/avatar-6.jpg" alt="..." class="img-fluid">
+                <div class="avatar"><img src="img/APHiD.png" alt="..." class="img-fluid third-algo">
                   <div class="order dashbg-4">3rd</div>
                 </div><a href="#" class="user-title">
-                  <h3 class="h5">Sebastian Wood</h3><span>@sebastian</span>
+                  <h3 class="h5">APHiD</h3><span>@Geroge Michelogiannakis</span>
                 </a>
-                <div class="contributions">620 Contributions</div>
+                <div class="contributions">620 Points</div>
                 <div class="details d-flex">
                   <div class="item"><i class="icon-info"></i><strong>150</strong></div>
                   <div class="item"><i class="fa fa-gg"></i><strong>280</strong></div>
@@ -590,12 +618,12 @@
             <div class="row d-flex align-items-center">
               <div class="col-lg-4 d-flex align-items-center">
                 <div class="order">4th</div>
-                <div class="avatar"> <img src="img/avatar-1.jpg" alt="..." class="img-fluid"></div><a href="#"
-                  class="name"><strong class="d-block">Tomas Hecktor</strong><span
-                    class="d-block">@tomhecktor</span></a>
+                <div class="avatar"> <img src="img/TopoMapping.png" alt="..." class="img-fluid"></div><a href="#"
+                  class="name"><strong class="d-block">TopoMapping</strong><span
+                    class="d-block">@Juan J.Galvez</span></a>
               </div>
               <div class="col-lg-4 text-center">
-                <div class="contributions">410 Contributions</div>
+                <div class="contributions">410 Points</div>
               </div>
               <div class="col-lg-4">
                 <div class="details d-flex">
@@ -610,12 +638,12 @@
             <div class="row d-flex align-items-center">
               <div class="col-lg-4 d-flex align-items-center">
                 <div class="order">5th</div>
-                <div class="avatar"> <img src="img/avatar-2.jpg" alt="..." class="img-fluid"></div><a href="#"
-                  class="name"><strong class="d-block">Alexander Shelby</strong><span
-                    class="d-block">@alexshelby</span></a>
+                <div class="avatar"> <img src="img/TreeMatch.png" alt="..." class="img-fluid"></div><a href="#"
+                  class="name"><strong class="d-block">TreeMatch</strong><span
+                    class="d-block">@Emmanuel Jeannot</span></a>
               </div>
               <div class="col-lg-4 text-center">
-                <div class="contributions">320 Contributions</div>
+                <div class="contributions">320 Points</div>
               </div>
               <div class="col-lg-4">
                 <div class="details d-flex">
@@ -630,12 +658,12 @@
             <div class="row d-flex align-items-center">
               <div class="col-lg-4 d-flex align-items-center">
                 <div class="order">6th</div>
-                <div class="avatar"> <img src="img/avatar-6.jpg" alt="..." class="img-fluid"></div><a href="#"
-                  class="name"><strong class="d-block">Arther Kooper</strong><span
-                    class="d-block">@artherkooper</span></a>
+                <div class="avatar"> <img src="img/MPIPP.png" alt="..." class="img-fluid"></div><a href="#"
+                  class="name"><strong class="d-block">MPIPP</strong><span
+                    class="d-block">@Hu Chen</span></a>
               </div>
               <div class="col-lg-4 text-center">
-                <div class="contributions">170 Contributions</div>
+                <div class="contributions">170 Points</div>
               </div>
               <div class="col-lg-4">
                 <div class="details d-flex">
