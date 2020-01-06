@@ -122,9 +122,61 @@
 ### 12.28 开发日志
 
 - 调整布局内容完成板块归类
-- 制作文件上传功能
+- 调研文件上传功能
   - 文件上传拟采用Dropzone.js库来实现
   - 功能上支持本地选择文件、拖拽上传文件
+
+### 12.29 开发日志
+
+- 今日摸鱼
+
+### 12.30 开发日志
+
+- 编写设计文档
+- 进行需求分析、系统架构设计、数据库设计以及接口设计
+- 对模块进行详细设计，其中包括
+  - 模块功能
+  - 输入输出接口
+  - 模块设计图
+
+### 12.31 开发日志
+
+
+
+## 2020.1
+
+### 1.2 开发日志
+
+- 调研node.js文件处理模块fs
+
+  - 主要调研文件读/写功能
+  - 文件读写具有同步/异步两种模式
+  - 用法：
+
+  ```js
+  // readfile.js
+  let fs = require('fs')
+  // 异步读取
+  fs.readFile('test.txt',function(err, data) {
+    if(err) {
+      return console.error(err)
+    }
+    else {
+      console.log('asynchronous reading file...', data.toString())
+    }
+  })
+  // 同步读取
+  let data = fs.readFileSync('test.txt')
+  console.log(data.toString())
+  ```
+
+  ​	  执行上述js文件
+
+  ```php
+  $node readfile.js
+  ```
+
+  
 
 
 
