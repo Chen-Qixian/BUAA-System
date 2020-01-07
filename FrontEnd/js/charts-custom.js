@@ -661,10 +661,10 @@ $(document).ready(function () {
         type: 'radar',
         options: chartOptions,
         data: {
-            labels: ["A", "B", "C", "D", "E", "C"],
+            labels: ["QTMS", "LPMS", "APHiD", "TopoMapping", "TreeMatch", "MPIPP"],
             datasets: [
                 {
-                    label: "First dataset",
+                    label: "Failed Tasks",
                     backgroundColor: "rgba(113, 39, 172, 0.4)",
                     borderWidth: 2,
                     borderColor: "#7127AC",
@@ -675,7 +675,7 @@ $(document).ready(function () {
                     data: [65, 59, 90, 81, 56, 55]
                 },
                 {
-                    label: "Second dataset",
+                    label: "Succeed Tasks",
                     backgroundColor: "rgba(207, 83, 249, 0.4)",
                     borderWidth: 2,
                     borderColor: "#CF53F9",

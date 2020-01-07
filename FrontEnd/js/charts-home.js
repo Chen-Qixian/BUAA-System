@@ -43,7 +43,7 @@ $(document).ready(function () {
             labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
             datasets: [
                 {
-                    label: "Page Visitors",
+                    label: "Data Set 5",
                     fill: true,
                     lineTension: 0.2,
                     backgroundColor: "transparent",
@@ -66,7 +66,7 @@ $(document).ready(function () {
                     spanGaps: false
                 },
                 {
-                    label: "Page Views",
+                    label: "Data Set 6",
                     fill: true,
                     lineTension: 0.2,
                     backgroundColor: "transparent",
@@ -298,7 +298,7 @@ $(document).ready(function () {
             labels: ["January", "February", "March", "April", "May", "June", "July"],
             datasets: [
                 {
-                    label: "Data Set 1",
+                    label: "Data Set 3",
                     backgroundColor: [
                         "rgba(75, 75, 75, 0.7)",
                         "rgba(75, 75, 75, 0.7)",
@@ -330,7 +330,7 @@ $(document).ready(function () {
                     data: [65, 59, 80, 81, 56, 55, 40],
                 },
                 {
-                    label: "Data Set 2",
+                    label: "Data Set 4",
                     backgroundColor: [
                         "rgba(238, 139, 152, 0.7)",
                         "rgba(238, 139, 152, 0.7)",
@@ -510,7 +510,7 @@ $(document).ready(function () {
             labels: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
             datasets: [
                 {
-                    label: "Data Set 1",
+                    label: "Data Set 5",
                     backgroundColor: [
                         '#EF8C99',
                         '#EF8C99',
@@ -570,7 +570,7 @@ $(document).ready(function () {
             labels: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
             datasets: [
                 {
-                    label: "Data Set 1",
+                    label: "Data Set 6",
                     backgroundColor: [
                         '#CF53F9',
                         '#CF53F9',
