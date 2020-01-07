@@ -52,7 +52,11 @@ nav#sidebar ul li:hover {
     margin-bottom: 30px;
     cursor: pointer;
     text-align: center;
-    line-height: 430px !important;
+    line-height: 350px !important;
     font-size: 30px;
     background-color: transparent !important;
+}
+
+.message .profile img {
+    border-radius: 0;
 }
