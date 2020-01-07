@@ -44,3 +44,15 @@ nav#sidebar ul li:hover {
     padding: 0px;
     border: 3px solid orange;
 }
+
+#file-upload-dropzone {
+    border: 3px dashed #ccc;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 430px !important;
+    font-size: 30px;
+    background-color: transparent !important;
+}
