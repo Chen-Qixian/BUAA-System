@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
   <!-- 全页图标 -->
   <link rel="stylesheet" href="css/font.css">
+  <!-- 文件上传库样式dropzone -->
+  <link rel="stylesheet" href="css/dropzone.css">
   <!-- 主题颜色 -->
   <link rel="stylesheet" href="css/style.violet.css" id="theme-stylesheet">
   <!-- 定制样式/置于底部用于覆盖 -->
@@ -39,51 +41,6 @@
         <!-- 导航栏左侧：题头信息 end -->
         <!-- 导航栏右侧：功能控件 -->
         <div class="right-menu list-inline no-margin-bottom">
-          <!-- 信箱内容 -->
-          <div class="list-inline-item dropdown">
-            <a id="navbarDropdownMenuLink1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link messages-toggle">
-              <i class="icon-email"></i><span class="badge dashbg-1">5</span>
-            </a>
-            <div aria-labelledby="navbarDropdownMenuLink1" class="dropdown-menu messages">
-              <a href="#" class="dropdown-item message d-flex align-items-center">
-                <div class="profile"><img src="img/avatar-3.jpg" alt="..." class="img-fluid">
-                  <div class="status online"></div>
-                </div>
-                <div class="content">
-                  <strong class="d-block">Nadia Halsey</strong>
-                  <span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">9:30am</small>
-                </div>
-              </a>
-              <a href="#" class="dropdown-item message d-flex align-items-center">
-                <div class="profile"><img src="img/avatar-2.jpg" alt="..." class="img-fluid">
-                  <div class="status away"></div>
-                </div>
-                <div class="content">
-                  <strong class="d-block">Peter Ramsy</strong>
-                  <span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">7:40am</small></div>
-              </a>
-              <a href="#" class="dropdown-item message d-flex align-items-center">
-                <div class="profile"><img src="img/avatar-1.jpg" alt="..." class="img-fluid">
-                  <div class="status busy"></div>
-                </div>
-                <div class="content">
-                  <strong class="d-block">Sam Kaheil</strong>
-                  <span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">6:55am</small></div>
-              </a>
-              <a href="#" class="dropdown-item message d-flex align-items-center">
-                <div class="profile"><img src="img/avatar-5.jpg" alt="..." class="img-fluid">
-                  <div class="status offline"></div>
-                </div>
-                <div class="content">
-                  <strong class="d-block">Sara Wood</strong>
-                  <span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">10:30pm</small></div>
-              </a>
-              <a href="#" class="dropdown-item text-center message"> 
-                <strong>See All Messages<i class="fa fa-angle-right"></i></strong>
-              </a>
-            </div>
-          </div>
-          <!-- 信箱内容 end -->
           <!-- 任务进度 -->
           <div class="list-inline-item dropdown">
             <a id="navbarDropdownMenuLink2" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link tasks-toggle">
@@ -149,13 +106,6 @@
             </div>
           </div>
           <!-- 语言选择器 end -->
-          <!-- 登陆/注销 -->
-          <div class="list-inline-item logout"> 
-            <a id="logout" href="login.html" class="nav-link"> 
-              <span class="d-none d-sm-inline">Logout</span> <i class="icon-logout"></i>
-            </a>
-          </div>
-          <!-- 登陆/注销 end -->
         </div>
       </div>
     </nav>
@@ -168,7 +118,7 @@
         <div class="avatar"><img src="img/avatar-6.jpg" alt="..." class="img-fluid rounded-circle"></div>
         <div class="title">
           <h1 class="h5">Chris Chen</h1>
-          <p>Caiyun Technology</p>
+          <p>Beihang University</p>
         </div>
       </div>
       <!-- 侧边栏菜单导航 -->
@@ -224,7 +174,7 @@
               <div class="statistic-block block">
                 <div class="progress-details d-flex align-items-end justify-content-between">
                   <div class="title">
-                    <div class="icon"><i class="icon-paper-and-pencil"></i></div><strong>heat</strong>
+                    <div class="icon"><i class="icon-paper-and-pencil"></i></div><strong>cost</strong>
                   </div>
                   <div class="number dashtext-3">256</div>
                 </div>
@@ -299,6 +249,18 @@
         </div>
       </div>
       <!-- FileUpload 内容 end -->
+      <section class="no-padding-bottom">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <form action="/file-upload" class="dropzone" id="file-upload-dropzone">
+                Drop Files Here or Click to Upload Files
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <!-- Configuration 内容 -->
       <div class="page-header" id="configuration">
         <div class="container-fluid">
@@ -449,21 +411,24 @@
                   </div>
                 </div>
                 <div class="stats-3 d-flex justify-content-between text-center">
-                  <div class="item"><strong class="d-block strong-sm">4.124</strong><span
-                      class="d-block span-sm">Threats</span>
+                  <div class="item"><strong class="d-block strong-sm">4,124</strong><span
+                      class="d-block span-sm">succeed</span>
                     <div class="line"></div><small>+246</small>
                   </div>
-                  <div class="item"><strong class="d-block strong-sm">2.147</strong><span
-                      class="d-block span-sm">Neutral</span>
+                  <div class="item"><strong class="d-block strong-sm">2,147</strong><span
+                      class="d-block span-sm">failed</span>
                     <div class="line"></div><small>+416</small>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- 雷达图 -->
             <div class="col-lg-6">
-              <!-- 右侧折线图 -->
-              <div class="drills-chart block">
-                <canvas id="lineChart1"></canvas>
+              <div class="radar-chart chart block">
+                <div class="title"><strong>Task Success Rate</strong></div>
+                <div class="radar-chart chart margin-bottom-sm">
+                  <canvas id="radarChartCustom"></canvas>
+                </div>
               </div>
             </div>
           </div>
@@ -505,12 +470,14 @@
           <div class="row d-flex align-items-stretch">
             <div class="col-lg-4">
               <div class="stats-with-chart-1 block">
-                <div class="title"> <strong class="d-block">Sales Difference</strong><span class="d-block">Lorem ipsum
-                    dolor sit</span></div>
+                <div class="title"> 
+                  <strong class="d-block">Transfer Rate</strong>
+                  <span class="d-block">Average Speed</span>
+                </div>
                 <div class="row d-flex align-items-end justify-content-between">
                   <div class="col-5">
-                    <div class="text"><strong class="d-block dashtext-3">$740</strong><span class="d-block">May
-                        2017</span><small class="d-block">320 Sales</small></div>
+                    <div class="text"><strong class="d-block dashtext-3">740</strong>
+                      <span class="d-block">BPS</span><small class="d-block">maximum 1280 bps</small></div>
                   </div>
                   <div class="col-7">
                     <div class="bar-chart chart">
@@ -522,12 +489,17 @@
             </div>
             <div class="col-lg-4">
               <div class="stats-with-chart-1 block">
-                <div class="title"> <strong class="d-block">Visit Statistics</strong><span class="d-block">Lorem ipsum
-                    dolor sit</span></div>
+                <div class="title"> 
+                  <strong class="d-block">Nodes Dispatched</strong>
+                  <span class="d-block">Total Number</span>
+                </div>
                 <div class="row d-flex align-items-end justify-content-between">
                   <div class="col-4">
-                    <div class="text"><strong class="d-block dashtext-1">$457</strong><span class="d-block">May
-                        2017</span><small class="d-block">210 Sales</small></div>
+                    <div class="text">
+                      <strong class="d-block dashtext-1">457</strong>
+                      <span class="d-block">Nodes</span>
+                      <small class="d-block">88% nodes used</small>
+                    </div>
                   </div>
                   <div class="col-8">
                     <div class="bar-chart chart">
@@ -539,12 +511,17 @@
             </div>
             <div class="col-lg-4">
               <div class="stats-with-chart-1 block">
-                <div class="title"> <strong class="d-block">Sales Activities</strong><span class="d-block">Lorem ipsum
-                    dolor sit</span></div>
+                <div class="title"> 
+                  <strong class="d-block">Process placed</strong>
+                  <span class="d-block">Total Number</span>
+                </div>
                 <div class="row d-flex align-items-end justify-content-between">
                   <div class="col-5">
-                    <div class="text"><strong class="d-block dashtext-2">80%</strong><span class="d-block">May
-                        2017</span><small class="d-block">+35 Sales</small></div>
+                    <div class="text">
+                      <strong class="d-block dashtext-2">801</strong>
+                      <span class="d-block">process placed</span>
+                      <small class="d-block">+35 Process</small>
+                    </div>
                   </div>
                   <div class="col-7">
                     <div class="bar-chart chart">
@@ -558,7 +535,7 @@
         </div>
       </section>
       <!-- Data Visualization 内容 end -->
-      <!-- Runtime 内容 -->
+      <!-- Recommendation 内容 -->
       <div class="page-header" id="runtime">
         <div class="container-fluid">
           <h2 class="h5 no-margin-bottom">Recommendations</h2>
@@ -676,7 +653,7 @@
           </div>
         </div>
       </section>
-      <!-- Runtime 内容 end -->
+      <!-- Recommendation 内容 end -->
 
       <footer class="footer">
         <div class="footer__block block no-margin-bottom">
@@ -695,6 +672,7 @@
   <script src="vendor/chart.js/Chart.min.js"></script>
   <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
   <script src="js/charts-home.js"></script>
+  <script src="js/charts-custom.js"></script>
   <script src="js/dropzone.js"></script>
   <script src="js/front.js"></script>
 </body>
